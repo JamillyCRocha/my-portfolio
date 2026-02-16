@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daedalus • Details</title>
+
+  <link rel="stylesheet" href="project-details.css" />
+</head>
+<body>
+
+  <main class="pd-wrap">
+
+    <header class="pd-top">
+      <a class="pd-back" href="home.html">← Back</a>
+
+      <nav class="pd-crumb" aria-label="breadcrumb">
+        <span class="crumb">Projects</span>
+        <span class="sep">›</span>
+        <span class="crumb is-current">Daedalus</span>
+      </nav>
+    </header>
+
+    <section class="pd-hero">
+
+      <div class="pd-left">
+        <h1 class="pd-title">Daedalus</h1>
+
+        <p class="pd-desc">
+          Daedalus é um conceito de plataforma SaaS voltada para modelagem 3D generativa, projetada para democratizar a criação tridimensional de forma acessível, rápida e inteligente.
+
+O produto integra inteligência artificial generativa por meio de prompts de texto, permitindo que engenheiros, game designers e entusiastas criem modelos 3D com maior produtividade e menor complexidade.
+
+O design do Daedalus foi desenvolvido com foco em simplicidade, inovação e experiência do usuário, reduzindo a curva de aprendizado e estimulando a criatividade.
+        </p>
+
+        <div class="pd-stats">
+          <div class="stat">
+            <div class="stat__left">
+              <div class="stat__num" id="statTech">9</div>
+              <div class="stat__label">Total de Tecnologias</div>
+            </div>
+            <div class="stat__icon">⚙️</div>
+          </div>
+
+          <div class="stat">
+            <div class="stat__left">
+              <div class="stat__num" id="statFeat">4</div>
+              <div class="stat__label">Principais Recursos</div>
+            </div>
+            <div class="stat__icon">✨</div>
+          </div>
+        </div>
+
+
+        <div class="pd-actions">
+          <a class="btn primary" href="https://github.com/Abnt140/Daedalus" target="_blank" rel="noopener">Github</a>
+          <a class="btn" href="https://www.behance.net/gallery/230846947/DAEDALUS-Sistema-de-Modelagem-3D/modules/1323536999" target="_blank" rel="noopener">Behance</a>
+
+         <div id="google_translate_element"></div>
+
+         <script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'pt',
+      includedLanguages: 'pt,en,zh-CN,ko,ja',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    },
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        </div>
+
+        <section class="pd-block">
+          <h2 class="pd-h2">Tecnologias usadas</h2>
+
+          <ul class="chips" id="techList">
+            <li class="chip">Figma</li>
+            <li class="chip">Design System</li>
+            <li class="chip">UX Research</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="pd-right">
+        <figure class="pd-preview">
+          <img src="assets/daedalustela.png" alt="Preview do AutoChat-Discord">
+        </figure>
+
+        <section class="pd-card">
+          <h2 class="pd-h2">Principais Recursos</h2>
+          <ul class="features" id="featuresList">
+            <li>Criação de modelos 3D via prompt de texto</li>
+            <li>IA generativa nativa</li>
+            <li>Interface simples e intuitiva</li>
+            <li>Fluxo rápido de prototipagem 3D</li>
+            <li>Base para manufatura aditiva (impressão 3D)</li>
+          </ul>
+        </section>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="project-details.js"></script>
+</body>
+</html>

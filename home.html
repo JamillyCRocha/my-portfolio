@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/code.png" type="image/x-icon">
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="grain"></span>
+  </div>
+
+  <header class="header reveal reveal--down d1">
+    <div class="container header__inner">
+      <a class="brand" href="#home">Jamilly Lima</a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__link is-active" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#portfolio">Portfolio</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <a class="mobileNav__link" href="#home">Home</a>
+      <a class="mobileNav__link" href="#about">Sobre</a>
+      <a class="mobileNav__link" href="#portfolio">Portfolio</a>
+      <a class="mobileNav__link" href="#contact">Contato</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero__grid">
+
+        <div class="hero__left">
+          <div class="pill reveal reveal--up d2">
+            <span class="dot"></span>
+            Ready to Innovate
+          </div>
+
+          <h1 class="hero__title reveal reveal--up d3">
+            <span>Fullstack</span>
+            <span class="accent">Developer</span>
+          </h1>
+
+          <p class="hero__subtitle reveal reveal--up d4">Engenheira da Computação</p>
+
+          <p class="hero__desc reveal reveal--up d5">
+            Desenvolvedor(a) fullstack com olhar em UX, transformo ideias em websites inovadores, funcionais e fáceis de usar, unindo tecnologia e experiência do usuário.
+          </p>
+
+          <div class="tags reveal reveal--up d6">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Javascript</span>
+          </div>
+
+          <div class="actions reveal reveal--up d7">
+            <a class="btn btn--primary" id="projectsBtn" href="#portfolio">
+              Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M8 5l8 7-8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <div id="google_translate_element"></div>
+          </div>
+
+          <div class="social reveal reveal--up d7">
+            <a class="iconBtn" href="https://github.com/JamillyCRocha" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M12 .7a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.2-.8.1-.8.1-.8 1.3.1 2 .1 3 1.6 1.1 2 3 1.4 3.7 1 .1-.8.4-1.4.7-1.7-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.6 11.6 0 0 1 6.2 0C18.6 4.6 19.7 5 19.7 5c.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2.1v3.1c0 .3.2.6.8.5A12 12 0 0 0 12 .7z"/>
+              </svg>
+            </a>
+
+            <a class="iconBtn" href="https://www.linkedin.com/in/jamilly-l-41aab0227/" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 23.5h4V7.98h-4V23.5zM8.5 7.98h3.83v2.12h.06c.53-1 1.83-2.12 3.77-2.12 4.03 0 4.78 2.65 4.78 6.1v9.42h-4v-8.36c0-1.99-.04-4.55-2.77-4.55-2.77 0-3.2 2.16-3.2 4.4v8.51h-4V7.98z"/>
+              </svg>
+            </a>
+
+            <a class="iconBtn" href="https://www.behance.net/lillys2lima" aria-label="Behance" title="Behance">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M9.6 11.2c.9-.4 1.5-1.2 1.5-2.2 0-1.8-1.3-2.8-3.6-2.8H3v10h4.7c2.5 0 4-1.2 4-3.2 0-1.4-.8-2.4-2.1-2.8zM5.3 6.9h2c1.1 0 1.7.4 1.7 1.3 0 .9-.6 1.3-1.7 1.3h-2v-2.6zm2.2 7.4H5.3v-3h2.3c1.4 0 2.1.5 2.1 1.5 0 1-.7 1.5-2.2 1.5zm11.6-6.9c-2.5 0-4.2 1.8-4.2 4.5 0 2.7 1.7 4.5 4.3 4.5 2 0 3.4-1 3.9-2.7h-2c-.3.6-.9 1-1.8 1-1.2 0-2-.8-2.1-2h6.1c.1-.3.1-.6.1-.9 0-2.6-1.6-4.4-4.3-4.4zm-2 3.6c.2-1.1.9-1.8 2-1.8 1.1 0 1.8.7 1.9 1.8h-3.9zM16.5 6h4v1.2h-4V6z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="devices">
+            <div class="laptop float">
+              <div class="laptop__screen">
+                <div class="term">
+                  <div class="term__top">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="term__title">jamillylima.com</span>
+                  </div>
+
+                  <div class="term__body">
+                    <span class="prompt">Hello, World ☺️</span>
+                    <span class="cursor"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop__base"></div>
+            </div>
+
+            <div class="phone phone--wide float float--delay">
+              <div class="phone__bezel">
+                <div class="phone__notch"></div>
+                <div class="phone__screen">
+                  <div class="phone__welcome">welcome</div>
+                </div>
+                <div class="phone__btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="about__top reveal reveal--up d1">
+          <h2 class="about__headline">About Me</h2>
+          <p class="about__tagline">✨ Transformando ideias em experiências digitais ✨</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__left reveal reveal--up d2">
+            <h3 class="about__hello">
+              Hello, I’m <span>Jamilly Lima</span>
+            </h3>
+
+            <p class="about__text">
+              Sou estudante de Engenharia da Computação e desenvolvedora Fullstack. Gosto de criar interfaces bonitas, rápidas e funcionais, com foco na experiência do usuário e no desenvolvimento de soluções digitais eficientes.
+            </p>
+
+            <div class="about__actions">
+              <a class="btn btn--primary" href="assets/assets_Jamilly Cristina - Curriulo-2(1)_removed.pdf" download="assets/assets_Jamilly Cristina - Curriulo-2(1)_removed.pdf">Download Currículo - Português</a>
+              <a class="btn btn--primary" href="assets/Jamilly Cristina - Curriulo-2(1)-1_removed.pdf" download="assets/Jamilly Cristina - Curriulo-2(1)-1_removed.pdf">Download Currículo - Inglês</a>
+            </div>
+          </div>
+
+          <div class="about__right reveal reveal--up d3">
+            <div class="about__avatar">
+              <img src="assets/WhatsApp Image 2026-02-09 at 23.09.19.jpeg" alt="Foto de Jamilly Lima">
+            </div>
+          </div>
+        </div>
+
+        <div class="about__stats">
+          <div class="statCard reveal reveal--up d2">
+            <div class="statCard__icon">
+              <img src="assets/code.png" alt="Total Projects">
+            </div>
+            <div class="statCard__meta">
+              <small>Total Projects</small>
+              <strong>10</strong>
+            </div>
+          </div>
+
+          <div class="statCard reveal reveal--up d3">
+            <div class="statCard__icon">
+              <img src="assets/quality.png" alt="Certificates">
+            </div>
+            <div class="statCard__meta">
+              <small>Certificates</small>
+              <strong>6</strong>
+            </div>
+          </div>
+
+          <div class="statCard reveal reveal--up d4">
+            <div class="statCard__icon">
+              <img src="assets/global.png" alt="Years of Experience">
+            </div>
+            <div class="statCard__meta">
+              <small>Years of Experience</small>
+              <strong>1</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="showcase" id="portfolio">
+      <div class="showcase__container">
+
+        <header class="showcase__header">
+          <h2 class="showcase__title">Portfolio Showcase</h2>
+          <p class="showcase__desc">
+            Explore minha jornada por meio de projetos, certificações e especialização técnica. Cada seção representa um marco no meu caminho de aprendizado contínuo.
+          </p>
+        </header>
+
+        <nav class="showcase__tabs" aria-label="Portfolio sections">
+          <button class="showcase__tab is-active" type="button" data-tab="projects">Projects</button>
+          <button class="showcase__tab" type="button" data-tab="certificados">Certificados</button>
+          <button class="showcase__tab" type="button" data-tab="tecnologias">Tecnologias</button>
+        </nav>
+
+        <div class="showcase__panels">
+          <br>
+
+          <section class="showcase__panel is-active" id="tab-projects" data-panel="projects">
+            <div class="showcase__grid">
+
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img src="assets/portaldo servidor.png" alt="Portal do Servidor">
+                </div>
+                <div class="project-card__content">
+                  <h3>Portal do Servidor</h3>
+                  <p>
+                    O Portal do Servidor é um projeto de intranet desenvolvido para centralizar informações, serviços e comunicados internos, facilitando o dia a dia dos colaboradores.
+                  </p>
+                  <div class="card__actions">
+                    <a href="intranet.html">Details →</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img src="assets/Invest.png" alt="Invest Amazonas">
+                </div>
+                <div class="project-card__content">
+                  <h3>Invest Amazonas</h3>
+                  <p>
+                    O Invest Amazonas é um site institucional desenvolvido para promover o potencial econômico do estado do Amazonas, reunindo informações estratégicas sobre investimentos, setores produtivos, indicadores econômicos e oportunidades de negócios.
+                  </p>
+                  <div class="card__actions">
+                    <a href="invest.html">Details →</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img src="assets/portal do trabalho.png" alt="Portal do Trabalhador">
+                </div>
+                <div class="project-card__content">
+                  <h3>Portal do Trabalhador</h3>
+                  <p>
+                    O Portal do Trabalhador (SETEMP) é uma plataforma digital criada para centralizar serviços e informações voltadas ao trabalhador, facilitando o acesso a oportunidades de emprego, programas de qualificação profissional e atendimentos institucionais
+                  </p>
+                  <div class="card__actions">
+                    <a href="setemp.html">Details →</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img src="assets/daedalus.png" alt="Daedalus">
+                </div>
+                <div class="project-card__content">
+                  <h3>Daedalus</h3>
+                  <p>
+                    O Daedalus é um sistema de modelagem 3D que utiliza inteligência artificial para otimizar e automatizar o processo de criação de modelos tridimensionais. A plataforma permite gerar, ajustar e visualizar estruturas 3D de forma mais rápida e inteligente
+                  </p>
+                  <div class="card__actions">
+                    <a href="daedalus.html">Details →</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img src="assets/Vento Norte.png" alt="Vento Norte">
+                </div>
+                <div class="project-card__content">
+                  <h3>Vento Norte</h3>
+                  <p>
+                    O Vento Norte Aerospace é um site institucional desenvolvido para o projeto de extensão da Liga Acadêmica de Foguetes da EST/UEA, com o objetivo de divulgar pesquisas, atividades práticas e iniciativas acadêmas na área aeroespacial
+                  </p>
+                  <div class="card__actions">
+                    <a href="ventonorte.html">Details →</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__image">
+                  <img src="assets/aerotest.png" alt="AeroTest">
+                </div>
+                <div class="project-card__content">
+                  <h3>AeroTest</h3>
+                  <p>
+                    O AeroTest é um sistema de simulação desenvolvido para analisar um possível lançamento de foguete, integrando animação 3D e inteligência artificial como suporte ao processo de testes.
+                  </p>
+                  <div class="card__actions">
+                    <a href="aerotest.html">Details →</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
+          <section class="showcase__panel" id="tab-certificados" data-panel="certificados">
+            <div class="cert-grid">
+
+              <button class="cert-card" type="button"
+                data-full="assets/certificado - Deep Learning_page-0001.jpg"
+                aria-label="OCEAN - DEEP LEARNING">
+                <img src="assets/certificado - Deep Learning_page-0001.jpg" alt="Certificado 1">
+              </button>
+
+              <button class="cert-card" type="button"
+                data-full="assets/Certificado - Banco de Dados.jpg" aria-label="Abrir certificado 2">
+                <img src="assets/Certificado - Banco de Dados.jpg" alt="Certificado 2">
+              </button>
+
+              <button class="cert-card" type="button"
+                data-full="assets/Versionamento de Código - cERTIFICADO.jpg" aria-label="Abrir certificado 3">
+                <img src="assets/Versionamento de Código - cERTIFICADO.jpg" alt="Certificado 3">
+              </button>
+
+              <button class="cert-card" type="button"
+                data-full="assets/certificado - BACKEND.jpg" aria-label="Abrir certificado 4">
+                <img src="assets/certificado - BACKEND.jpg" alt="Certificado 4">
+              </button>
+
+              <button class="cert-card" type="button"
+                data-full="assets/1747874805815.jpg" aria-label="Abrir certificado 5">
+                <img src="assets/1747874805815.jpg" alt="Certificado 5">
+              </button>
+
+              <button class="cert-card" type="button"
+                data-full="assets/1736312960279.jpg" aria-label="Abrir certificado 6">
+                <img src="assets/1736312960279.jpg" alt="Certificado 6">
+              </button>
+
+            </div>
+          </section>
+
+          <div class="lightbox" id="lightbox" aria-hidden="true">
+            <div class="lightbox__backdrop" data-close="true"></div>
+
+            <div class="lightbox__content" role="dialog" aria-modal="true" aria-label="Visualização do certificado">
+              <button class="lightbox__close" type="button" data-close="true" aria-label="Fechar">✕</button>
+              <img class="lightbox__img" id="lightboxImg" alt="">
+            </div>
+          </div>
+
+          <section class="showcase__panel" id="tab-tecnologias" data-panel="tecnologias">
+            <div class="tech-grid" id="techGrid">
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+                </div>
+                <h4>HTML</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+                </div>
+                <h4>CSS</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                </div>
+                <h4>JavaScript</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="Ttpescript" />
+                </div>
+                <h4>Typescript</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" />
+                </div>
+                <h4>React</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular" />
+                </div>
+                <h4>Angular</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python" />
+                </div>
+                <h4>Python</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="nodejs" />
+                </div>
+                <h4>Node.js</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" />
+                </div>
+                <h4>AWS</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="mysql" />
+                </div>
+                <h4>MySQL</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="docker" />
+                </div>
+                <h4>Docker</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="Postgresql" />
+                </div>
+                <h4>PostgreSQL</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" alt="nestjs" />
+                </div>
+                <h4>Nest.js</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="tailwindcss" />
+                </div>
+                <h4>Tailwind</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="sass" />
+                </div>
+                <h4>Sass</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="kotlin" />
+                </div>
+                <h4>Kotlin</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Vite" />
+                </div>
+                <h4>Git</h4>
+              </article>
+
+              <article class="tech-card">
+                <div class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original-wordmark.svg" alt="Vite" />
+                </div>
+                <h4>Prisma ORM</h4>
+              </article>
+
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="ctc">
+      <div class="container ctc__wrap">
+
+        <header class="ctc__head reveal reveal--up d1">
+          <h2 class="ctc__title">Contact Me</h2>
+          <p class="ctc__sub">Tem alguma dúvida? Envie-me uma mensagem e vamos conversar.</p>
+        </header>
+
+        <section class="contactCards">
+
+          <a class="contactCard"
+             href="mailto:jamillycristinarochadelima@hotmail.com?subject=Contato%20via%20Portfólio"
+             aria-label="Email">
+            <div class="contactIcon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.24l7.4 6.17a1 1 0 0 0 1.28 0L20 8.24V18H4z"/>
+              </svg>
+            </div>
+            <div class="contactText">
+              <h3>Email</h3>
+            </div>
+          </a>
+
+          <a class="contactCard" href="https://www.linkedin.com/in/jamilly-l-41aab0227/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <div class="contactIcon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                <path d="M6.94 6.5A2.44 2.44 0 1 1 7 1.6a2.44 2.44 0 0 1-.06 4.9zM2.7 22h4.5V8H2.7v14zM9 8h4.3v1.9h.06c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V22h-4.5v-6.1c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V22H9V8z"/>
+              </svg>
+            </div>
+            <div class="contactText">
+              <h3>LinkedIn</h3>
+              <p>Jamilly Lima</p>
+            </div>
+          </a>
+
+          <a class="contactCard" href="https://github.com/JamillyCRocha" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <div class="contactIcon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.35-1.17-3.35-1.17-.45-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.33 1.08 2.9.83.09-.65.35-1.08.63-1.33-2.21-.25-4.54-1.11-4.54-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.8c.85 0 1.71.12 2.51.35 1.9-1.29 2.74-1.02 2.74-1.02.56 1.37.21 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.93.68 1.87v2.77c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/>
+              </svg>
+            </div>
+            <div class="contactText">
+              <h3>GitHub</h3>
+              <p>JamillyCRocha</p>
+            </div>
+          </a>
+
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="simple-footer">
+    ©2026 Jamilly Lima
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    window.googleTranslateElementInit = function () {
+      const el = document.getElementById("google_translate_element");
+      if (!el) return;
+
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "pt",
+          includedLanguages: "pt,en,zh-CN,ko,ja,es",
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        "google_translate_element"
+      );
+    };
+  </script>
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
