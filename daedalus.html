@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Daedalus • Details</title>
+  <title>SEAM • Details</title>
 
   <link rel="stylesheet" href="project-details.css" />
 </head>
@@ -17,21 +17,19 @@
       <nav class="pd-crumb" aria-label="breadcrumb">
         <span class="crumb">Projects</span>
         <span class="sep">›</span>
-        <span class="crumb is-current">Daedalus</span>
+        <span class="crumb is-current">SEAM</span>
       </nav>
     </header>
 
     <section class="pd-hero">
 
       <div class="pd-left">
-        <h1 class="pd-title">Daedalus</h1>
+        <h1 class="pd-title">SEAM</h1>
 
         <p class="pd-desc">
-          Daedalus é um conceito de plataforma SaaS voltada para modelagem 3D generativa, projetada para democratizar a criação tridimensional de forma acessível, rápida e inteligente.
+          O SEAM é uma plataforma web desenvolvida para modernizar e centralizar a gestão de oportunidades de emprego, conectando candidatos, empresas e administradores em um único ambiente digital.
 
-O produto integra inteligência artificial generativa por meio de prompts de texto, permitindo que engenheiros, game designers e entusiastas criem modelos 3D com maior produtividade e menor complexidade.
-
-O design do Daedalus foi desenvolvido com foco em simplicidade, inovação e experiência do usuário, reduzindo a curva de aprendizado e estimulando a criatividade.
+O sistema permite o cadastro de usuários e empresas, publicação e gerenciamento de vagas, envio de currículos e acompanhamento de candidaturas. Conta também com painéis administrativos, controle de permissões por perfil e funcionalidades de análise de currículos, proporcionando mais organização, segurança e eficiência aos processos de recrutamento e seleção.
         </p>
 
         <div class="pd-stats">
@@ -53,9 +51,7 @@ O design do Daedalus foi desenvolvido com foco em simplicidade, inovação e exp
         </div>
 
 
-        <div class="pd-actions">
-          <a class="btn primary" href="https://github.com/Abnt140/Daedalus" target="_blank" rel="noopener">Github</a>
-          <a class="btn" href="https://www.behance.net/gallery/230846947/DAEDALUS-Sistema-de-Modelagem-3D/modules/1323536999" target="_blank" rel="noopener">Behance</a>
+        <div class="pd-actions">        
 
          <div id="google_translate_element"></div>
 
@@ -80,26 +76,37 @@ function googleTranslateElementInit() {
           <h2 class="pd-h2">Tecnologias usadas</h2>
 
           <ul class="chips" id="techList">
-            <li class="chip">Figma</li>
-            <li class="chip">Design System</li>
-            <li class="chip">UX Research</li>
+             <li class="chip">HTML5,</li>
+            <li class="chip">CSS3</li>
+            <li class="chip">React.js</li>
+              <li class="chip">Node.js</li>
+            <li class="chip">Typescript</li>
+            <li class="chip">Express.js</li>
+            <li class="chip">MySQL</li>
+            <li class="chip">MariaDB</li>
+            <li class="chip">Redis</li>
+            <li class="chip">Docker</li>
           </ul>
         </section>
       </div>
 
       <div class="pd-right">
         <figure class="pd-preview">
-          <img src="assets/daedalustela.png" alt="Preview do AutoChat-Discord">
+          <img src="assets/SEAM .png" alt="Preview do AutoChat-Discord">
         </figure>
 
         <section class="pd-card">
           <h2 class="pd-h2">Principais Recursos</h2>
           <ul class="features" id="featuresList">
-            <li>Criação de modelos 3D via prompt de texto</li>
-            <li>IA generativa nativa</li>
-            <li>Interface simples e intuitiva</li>
-            <li>Fluxo rápido de prototipagem 3D</li>
-            <li>Base para manufatura aditiva (impressão 3D)</li>
+            <li>Gestão de Vagas: Cadastro, publicação, edição e gerenciamento de oportunidades de emprego.</li>
+            <li>Cadastro de Candidatos e Empresas: Perfis personalizados com informações profissionais e institucionais.</li>
+            <li>Gerenciamento de Candidaturas: Inscrição em vagas, envio de currículos e acompanhamento do processo seletivo.</li>
+            <li>Análise de Currículos: Funcionalidades para avaliação e organização dos currículos recebidos.</li>
+            <li>Painel Administrativo: Gerenciamento de usuários, empresas, vagas e solicitações em um ambiente centralizado.</li>
+            <li>Controle de Acesso: Autenticação JWT e permissões específicas para candidatos, administradores e superadministradores.</li>
+            <li>Gestão de Solicitações: Criação, acompanhamento, aprovação e atualização do status das solicitações de vagas.</li>
+            <li>Segurança e Autenticação: Proteção de senhas com bcrypt, recuperação de acesso e controle de requisições.</li>
+            <li>Infraestrutura em Containers: Utilização do Docker para organização e execução dos serviços de backend, banco de dados e Redis.</li>
           </ul>
         </section>
       </div>

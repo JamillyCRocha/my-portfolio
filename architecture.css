@@ -1,0 +1,42 @@
+/* Isolado: nenhuma regra global do portfólio é alterada. */
+.devflow,.devflow *{box-sizing:border-box}
+.devflow{position:relative;overflow:hidden;isolation:isolate;padding:90px 20px;color:#eff3ff;font-family:Inter,system-ui,Arial,sans-serif;background:radial-gradient(ellipse at 4% 40%,#7936b42b,transparent 42%),radial-gradient(ellipse at 96% 45%,#20d8ed18,transparent 44%),#080c1c}
+.devflow:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#6a80a00c 1px,transparent 1px),linear-gradient(90deg,#6a80a00c 1px,transparent 1px);background-size:35px 35px}
+.devflow__inner{max-width:1160px;margin:0 auto}
+.devflow__intro{margin-bottom:32px}
+.devflow__kicker{color:#54dff6;font:700 11px/1.5 Consolas,monospace;letter-spacing:2px}
+.devflow__cursor{animation:devflow-blink 1s steps(1) infinite}
+.devflow__intro h2{color:#fff;margin:12px 0;font-size:clamp(31px,4vw,52px);line-height:1.15;font-weight:800;letter-spacing:-1.5px}
+.devflow__intro em{font-style:normal;background:linear-gradient(100deg,#b379ff,#37dff7);background-clip:text;-webkit-background-clip:text;color:transparent}
+.devflow__intro p{margin:0;color:#a8b4ce;max-width:680px;font-size:14px;line-height:1.6}
+.devflow__panel{overflow:hidden;border-radius:17px;border:1px solid #6b49a0;background:#0b1023;box-shadow:0 18px 60px #0006}
+.devflow__top,.devflow__terminalhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:#18152d;padding:15px 20px;border-bottom:1px solid #303452;font:700 10px Consolas,monospace;letter-spacing:1px;color:#91a9ce}
+.devflow__top i{display:inline-block;height:7px;width:7px;background:#32ecaf;border-radius:50%;box-shadow:0 0 10px #32ecaf;margin-right:6px}
+.devflow__top b{color:#40e8fb}
+.devflow__pipeline{position:relative;padding:56px 24px;background:radial-gradient(ellipse at center,#50308224,transparent 75%);min-height:325px}
+.devflow__cards{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,4vw,46px)}
+.devflow__card{min-width:0;min-height:224px;border:1px solid #614093;border-radius:12px;background:linear-gradient(145deg,#201632f7,#0c1527fa);padding:17px;outline:none;transition:transform .28s,border-color .28s,box-shadow .28s}
+.devflow__card:nth-child(even){border-color:#1c809e}
+.devflow__card.is-active,.devflow__card:hover,.devflow__card:focus-visible{transform:translateY(-5px);border-color:#44e1ff;box-shadow:0 0 0 1px #25bbed33,0 0 25px #39ddff26}
+.devflow__card small{display:block;color:#9ba5c1;font:700 9px Consolas,monospace;letter-spacing:1px}
+.devflow__icon{display:grid;place-items:center;width:40px;height:40px;margin:17px 0 13px;color:#bc83fa;background:#60399c44;border:1px solid #7956bd;border-radius:9px;font:bold 17px Consolas,monospace}
+.devflow__card:nth-child(even) .devflow__icon{color:#50dffe;background:#11406066;border-color:#157798}
+.devflow__card h3{color:#fff;font-size:19px;margin:0 0 5px}
+.devflow__card p{font-size:12px;color:#a5afd0;margin:0 0 12px}
+.devflow__desc{color:#c0c7d8;font-size:11px;line-height:1.5;display:block;min-height:36px}
+.devflow__tag{display:inline-block;margin-top:12px;padding:5px 7px;border-radius:5px;background:#6f36b329;color:#c4a0fc;font:700 9px Consolas,monospace}
+.devflow__paths{position:absolute;inset:0;height:100%;width:100%;pointer-events:none;z-index:1;overflow:visible}
+.devflow__terminal{border-top:1px solid #403463;background:#070b17}
+.devflow__terminalhead{padding:12px 20px;background:#100e20}
+.devflow__terminalhead span:first-child{color:#55ebbb}
+.devflow__status{color:#45dafa}
+.devflow__terminalbody{display:flex;align-items:flex-end;gap:12px;justify-content:space-between;padding:17px 20px;min-height:158px}
+.devflow__logs{font:12px/1.9 Consolas,monospace;color:#b4c5e5;min-width:0;overflow:hidden}
+.devflow__logs div{overflow-wrap:anywhere}
+.devflow__logs b{color:#be7afd}
+.devflow__replay{flex-shrink:0;cursor:pointer;border:1px solid #65539b;border-radius:7px;padding:10px 12px;background:#272044;color:#e0d1ff;font:700 11px Consolas,monospace}
+.devflow__replay:hover{border-color:#49d8fa}
+@keyframes devflow-blink{50%{opacity:0}}
+@media(max-width:750px){.devflow{padding:66px 14px}.devflow__pipeline{padding:28px 14px}.devflow__cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.devflow__card{min-height:205px}.devflow__terminalbody{flex-direction:column;align-items:flex-start}.devflow__replay{align-self:flex-end}}
+@media(max-width:440px){.devflow__cards{gap:12px}.devflow__card{padding:12px}.devflow__card h3{font-size:16px}.devflow__intro h2{letter-spacing:-.8px}}
+@media(prefers-reduced-motion:reduce){.devflow__cursor{animation:none}.devflow__card{transition:none}}
